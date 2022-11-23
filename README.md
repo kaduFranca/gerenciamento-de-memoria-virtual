@@ -1,0 +1,1 @@
+# subistitui-o-FIFO-LFU-LRU-e-NRU.
