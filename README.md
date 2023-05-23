@@ -1,4 +1,18 @@
-# subistitui-o-FIFO-LFU-LRU-e-NRU.
+# FIFO LFU LRU e NRU.
+
+Aqui está uma breve explicação de cada um desses algoritmos:
+
+FIFO (First-In, First-Out): Nesse algoritmo, a página mais antiga que foi trazida para a memória é a primeira a ser substituída. É como uma fila, onde a página que entrou primeiro é a primeira a sair. O FIFO não leva em consideração a frequência de uso ou a importância das páginas, apenas a ordem em que elas foram carregadas.
+
+LFU (Least Frequently Used): O LFU é baseado na ideia de que as páginas que foram menos usadas no passado têm uma menor probabilidade de serem usadas no futuro. Esse algoritmo mantém uma contagem de quantas vezes cada página foi referenciada e, quando ocorre uma falta de página, substitui a página com a menor contagem.
+
+LRU (Least Recently Used): O LRU substitui a página que não foi usada há mais tempo. Ele se baseia na ideia de que as páginas que não foram referenciadas por um longo período têm uma menor probabilidade de serem usadas em comparação com as páginas que foram usadas recentemente. O LRU geralmente é implementado mantendo uma lista ordenada das páginas com base em sua última referência, e a página no início da lista é substituída.
+
+NRU (Not Recently Used): O NRU é uma versão simplificada do LRU, que divide as páginas em diferentes classes com base em seu estado de uso recente. Normalmente, essas classes são: (1) páginas referenciadas recentemente e modificadas, (2) páginas referenciadas recentemente, mas não modificadas, (3) páginas não referenciadas recentemente, mas modificadas, e (4) páginas não referenciadas recentemente e não modificadas. O NRU substitui uma página aleatória da classe de menor prioridade, dando preferência a páginas que não foram referenciadas recentemente.
+
+Cada algoritmo possui vantagens e desvantagens, e a escolha de qual utilizar depende das características do sistema e dos requisitos específicos do ambiente em que está sendo aplicado.
+
+
 
 Desenvolva os algoritmos de substituição de páginas FIFO, LFU LRU e NRU.
 
